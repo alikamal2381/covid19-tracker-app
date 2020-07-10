@@ -1,9 +1,71 @@
-body {
-  background-color: rgb(250, 250, 250);
+.App {
+  text-align: center;
 }
 
-.container {
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+
+.row {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  border-bottom: 4px solid orangered;
+}
+
+.NewConfirmed,
+.TotalConfirmed,
+.NewDeaths,
+.TotalDeaths,
+.TotalRecovered {
+  padding: 0%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.NewConfirmed {
+  color: orangered;
+}
+
+.TotalConfirmed {
+  color: blueviolet;
+}
+
+.NewDeaths {
+  color: greenyellow;
+}
+
+.TotalDeaths {
+  color: red;
+}
+
+.TotalRecovered {
+  color: maroon;
+}
+
+table {
+  border-collapse: separate;
+  width: 80%;
+  margin: 0 auto;
+  border-spacing: 0 12px;
+}
+
+table thead tr {
+  background: #fff;
+}
+
+table thead tr th {
+  padding: 16px 12px;
+  text-align: left;
+}
+
+table tbody tr {
+  background: #fff;
+}
+
+table tbody tr td {
+  padding: 16px 12px;
+  text-align: left;
 }
