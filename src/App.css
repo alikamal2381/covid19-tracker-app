@@ -1,71 +1,56 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
 body {
-  background-color: #eee;
-  font-family: sans-serif;
+  background-color: #f5f6fa;
 }
 
-.row {
+.app {
   display: flex;
-  width: 80%;
-  margin: 0 auto;
-  background: #fff;
-  border-bottom: 4px solid orangered;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+  padding: 20px;
 }
 
-.NewConfirmed,
-.TotalConfirmed,
-.NewDeaths,
-.TotalDeaths,
-.TotalRecovered {
-  padding: 0%;
-  text-align: center;
-  margin: 0 auto;
+.app__dropdown {
+  background-color: white;
 }
 
-.NewConfirmed {
-  color: orangered;
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
-.TotalConfirmed {
-  color: blueviolet;
+.app__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
 }
 
-.NewDeaths {
-  color: greenyellow;
+.app__stats {
+  display: flex;
+  justify-content: space-between;
 }
 
-.TotalDeaths {
-  color: red;
+.app__left {
+  flex: 0.9;
 }
 
-.TotalRecovered {
-  color: maroon;
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-table {
-  border-collapse: separate;
-  width: 80%;
-  margin: 0 auto;
-  border-spacing: 0 12px;
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
 }
 
-table thead tr {
-  background: #fff;
-}
-
-table thead tr th {
-  padding: 16px 12px;
-  text-align: left;
-}
-
-table tbody tr {
-  background: #fff;
-}
-
-table tbody tr td {
-  padding: 16px 12px;
-  text-align: left;
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
 }

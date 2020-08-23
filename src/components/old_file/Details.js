@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
-import Summary from "./Summary";
+import Summary from "../../Summary";
 import Countries from "./Countries";
 
 class Details extends Component {
